@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: url("https://img.freepik.com/free-vector/purple-abstract-background_1340-17009.jpg");
+    background-color: rgb(235, 73, 73);
+    background-size: cover;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #clock {
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 600px;
+    transition: 1s ease-in-out;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.059) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: rgba(255, 255, 255, 0.06);
+    position: absolute;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    animation-name: fade-up;
+    animation-duration: 0.5s;
+  }
+  
+  .hour-card {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 130px;
+  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+  
+  .clock-hour {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #d6d6e6;
+    font-size: 80px;
+  }
+  
+  .minute-card {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+  
+  .clock-minute {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #d6d6e6;
+    font-size: 80px;
+  }
+  
+  .second-card {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+  
+  .clock-second {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4dc9ff;
+    font-size: 80px;
+  }
+  
+  .colons {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 600px;
+  }
+  
+  .colon1 {
+    margin-right: -11px;
+  }
+  
+  .colon2 {
+    margin-right: 132px;
+  }
+  
+  .colon {
+    font-size: 90px;
+    color: white;
+  }
+  
+  .am-pm-txt {
+  /*   margin: 20px; */
+    color: #4dc9ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .am-pm {
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  /*   margin-right : 10px; */
+  }
